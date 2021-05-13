@@ -49,3 +49,10 @@ services:
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
+
+
+      #fibvalues
+      #postgres
+      #postgrespassword
+
+
