@@ -5,21 +5,24 @@
                 "name" :"client",
                 "image" : "696515/multi-client",
                 "hostname" :  "client",
-                "essential" : false
+                "essential" : false,
+                "memory": 128
             },
 
             {
                 "name" :"server",
                 "image" : "696515/multi-server",
                 "hostname" :  "api",
-                "essential" : false
+                "essential" : false,
+                "memory": 128
             },
 
             {
                 "name" :"nginx",
                 "image" : "696515/multi-nginx",
                 "hostname" :  "nginx",
-                "essential" : true
+                "essential" : true,
+                "memory": 128
             },
 
             
@@ -28,6 +31,7 @@
                 "image" : "696515/multi-worker",
                 "hostname" :  "worker",
                 "essential" : true,
+                "memory": 128,
                 "portMappings" :[
                     {
                         "hostPort" :80,
